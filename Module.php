@@ -84,9 +84,6 @@ class Module extends \kouosl\base\Module
                 'tokens' => [
                     '{id}' => '<id:\\w+>'
                 ],
-                /*'patterns' => [
-                    'GET new-action' => 'new-action'
-                ]*/
             ],
 
         ] ;

@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Bannerr */
 
-$this->title = 'Create Bannerr';
-$this->params['breadcrumbs'][] = ['label' => 'Bannerrs', 'url' => ['index']];
+$this->title = 'Reklam Oluştur';
+$this->params['breadcrumbs'][] = ['label' => 'Reklamlar', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="bannerr-create">

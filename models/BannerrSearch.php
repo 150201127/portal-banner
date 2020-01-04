@@ -65,7 +65,8 @@ class BannerrSearch extends Bannerr
         $query->andFilterWhere(['like', 'bannerr_adi', $this->bannerr_adi])
             ->andFilterWhere(['like', 'bannerr_kodu', $this->bannerr_kodu])
             ->andFilterWhere(['like', 'bannerr_resim_url', $this->bannerr_resim_url])
-            ->andFilterWhere(['like', 'bannerr_reklam_url', $this->bannerr_reklam_url]);
+            ->andFilterWhere(['like', 'bannerr_reklam_url', $this->bannerr_reklam_url])
+            ->andFilterWhere(['like', 'bannerr_created', $this->bannerr_created]);
 
         return $dataProvider;
     }

@@ -42,12 +42,12 @@ class Bannerr extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'bannerr_id' => 'Bannerr ID',
-            'bannerr_adi' => 'Bannerr Adi',
-            'bannerr_kodu' => 'Bannerr Kodu',
-            'bannerr_resim_url' => 'Bannerr Resim Url',
-            'bannerr_reklam_url' => 'Bannerr Reklam Url',
-            'bannerr_created' => 'Bannerr Created',
+            'bannerr_id' => 'Reklam ID',
+            'bannerr_adi' => 'Reklam Adi',
+            'bannerr_kodu' => 'Reklam Kodu',
+            'bannerr_resim_url' => 'Reklam Resim Url',
+            'bannerr_reklam_url' => 'Reklam Url',
+            'bannerr_created' => 'Reklamı Oluşturan',
         ];
     }
 }

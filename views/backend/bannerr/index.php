@@ -7,17 +7,16 @@ use yii\widgets\Pjax;
 /* @var $searchModel backend\models\BannerrSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Bannerrs';
+$this->title = 'Reklamlar';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="bannerr-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php Pjax::begin(); ?>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
     <p>
-        <?= Html::a('Banner Ekle', ['create'], ['class' => 'btn btn-success']) ?>
+        <a class="btn btn-lg btn-primary" href="http://portal.kouosl/admin/banner">Modül Anasayfasına Dön</a></a>
+        <?= Html::a('Reklam Ekle', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -25,14 +24,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            
             'bannerr_adi',
             'bannerr_kodu',
             'bannerr_resim_url:url',
             'bannerr_reklam_url:url',
-            //'bannerr_created',
-
+            'bannerr_created',
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

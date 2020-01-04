@@ -23,7 +23,9 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'bannerr_created')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <a class="btn btn-lg btn-primary" href="http://portal.kouosl/admin/banner/bannerr/index">Vazgeç</a></a>
+        <?= Html::submitButton('Kaydet', ['class' => 'btn btn-success']) ?>
+        
     </div>
 
     <?php ActiveForm::end(); ?>

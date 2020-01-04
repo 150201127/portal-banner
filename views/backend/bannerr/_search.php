@@ -28,7 +28,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'bannerr_reklam_url') ?>
 
-    <?php // echo $form->field($model, 'bannerr_created') ?>
+    <? $form->field($model, 'bannerr_created') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
