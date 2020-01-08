@@ -7,12 +7,11 @@ use Yii;
 /**
  * This is the model class for table "bannerr".
  *
- * @property int $bannerr_id
- * @property string $bannerr_adi
- * @property string $bannerr_kodu
- * @property string $bannerr_resim_url
- * @property string $bannerr_reklam_url
- * @property string $bannerr_created
+ * @property int $reklamid
+ * @property string $reklamadi
+ * @property string $reklamkodu
+ * @property string $reklamurl
+ * @property string $reklamolusturan
  */
 class Bannerr extends \yii\db\ActiveRecord
 {
@@ -21,7 +20,7 @@ class Bannerr extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'bannerr';
+        return 'reklam';
     }
 
     /**
@@ -30,9 +29,9 @@ class Bannerr extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['bannerr_adi', 'bannerr_kodu', 'bannerr_resim_url', 'bannerr_reklam_url', 'bannerr_created'], 'required'],
-            [['bannerr_created'], 'safe'],
-            [['bannerr_adi', 'bannerr_kodu', 'bannerr_resim_url', 'bannerr_reklam_url'], 'string', 'max' => 250],
+            [['reklamadi', 'reklamkodu', 'reklamurl', 'reklamolusturan'], 'required'],
+            [['reklamolusturan'], 'safe'],
+            [['reklamadi', 'reklamkodu',  'reklamurl'], 'string', 'max' => 250],
         ];
     }
 
@@ -42,12 +41,11 @@ class Bannerr extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'bannerr_id' => 'Reklam ID',
-            'bannerr_adi' => 'Reklam Adi',
-            'bannerr_kodu' => 'Reklam Kodu',
-            'bannerr_resim_url' => 'Reklam Resim Url',
-            'bannerr_reklam_url' => 'Reklam Url',
-            'bannerr_created' => 'Reklamı Oluşturan',
+            'reklamid' => 'Reklam ID',
+            'reklamadi' => 'Reklam Adi',
+            'reklamkodu' => 'Reklam Kodu',
+            'reklamurl' => 'Reklam Url',
+            'reklamolusturan' => 'Reklamı Oluşturan',
         ];
     }
 }

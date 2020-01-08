@@ -17,8 +17,8 @@ class BannerrSearch extends Bannerr
     public function rules()
     {
         return [
-            [['bannerr_id'], 'integer'],
-            [['bannerr_adi', 'bannerr_kodu', 'bannerr_resim_url', 'bannerr_reklam_url', 'bannerr_created'], 'safe'],
+            [['reklamid'], 'integer'],
+            [['reklamadi', 'reklamkodu', 'reklamurl', 'reklamolusturan'], 'safe'],
         ];
     }
 
@@ -58,15 +58,14 @@ class BannerrSearch extends Bannerr
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'bannerr_id' => $this->bannerr_id,
-            'bannerr_created' => $this->bannerr_created,
+            'reklamid' => $this->reklamid,
+            'reklamolusturan' => $this->reklamolusturan,
         ]);
 
-        $query->andFilterWhere(['like', 'bannerr_adi', $this->bannerr_adi])
-            ->andFilterWhere(['like', 'bannerr_kodu', $this->bannerr_kodu])
-            ->andFilterWhere(['like', 'bannerr_resim_url', $this->bannerr_resim_url])
-            ->andFilterWhere(['like', 'bannerr_reklam_url', $this->bannerr_reklam_url])
-            ->andFilterWhere(['like', 'bannerr_created', $this->bannerr_created]);
+        $query->andFilterWhere(['like', 'reklamadi', $this->reklamadi])
+            ->andFilterWhere(['like', 'reklamkodu', $this->reklamkodu])
+            ->andFilterWhere(['like', 'reklamurl', $this->reklamurl])
+            ->andFilterWhere(['like', 'reklamolusturan', $this->reklamolusturan]);
 
         return $dataProvider;
     }

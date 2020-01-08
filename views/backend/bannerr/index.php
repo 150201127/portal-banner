@@ -24,11 +24,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-            'bannerr_adi',
-            'bannerr_kodu',
-            'bannerr_resim_url:url',
-            'bannerr_reklam_url:url',
-            'bannerr_created',
+            'reklamkodu',
+            'reklamadi',
+            'reklamolusturan',
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

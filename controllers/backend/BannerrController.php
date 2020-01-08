@@ -67,7 +67,7 @@ class BannerrController extends Controller
         $model = new Bannerr();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->bannerr_id]);
+            return $this->redirect(['view', 'id' => $model->reklamid]);
         }
 
         return $this->render('create', [
@@ -87,7 +87,7 @@ class BannerrController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->bannerr_id]);
+            return $this->redirect(['view', 'id' => $model->reklamid]);
         }
 
         return $this->render('update', [

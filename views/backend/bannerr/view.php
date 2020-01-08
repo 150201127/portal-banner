@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Bannerr */
 
-$this->title = $model->bannerr_id;
+$this->title = $model->reklamid;
 $this->params['breadcrumbs'][] = ['label' => 'Reklamlar', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -17,20 +17,19 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'bannerr_id',
-            'bannerr_adi',
-            'bannerr_kodu',
-            'bannerr_resim_url:url',
-            'bannerr_reklam_url:url',
-            //'bannerr_created',
+            'reklamid',
+            'reklamadi',
+            'reklamkodu',
+            'reklamurl:url',
+            'reklamolusturan',
         ],
     ]) ?>
     <p>        
         <a class="btn btn-lg btn-primary" href="http://portal.kouosl/admin/banner/bannerr/index">Geri Dön</a></a>
-        <?= Html::a('Sil', ['delete', 'id' => $model->bannerr_id], [
+        <?= Html::a('Sil', ['delete', 'id' => $model->reklamid], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => 'Emin Misin?',
                 'method' => 'post',
             ],
         ]) ?>

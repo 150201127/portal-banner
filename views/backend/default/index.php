@@ -6,7 +6,7 @@
 
         <p class="lead">Reklam Modülü Başarı İle Oluştu</p>
 
-        <p><a class="btn btn-lg btn-primary" href="http://portal.kouosl/admin/banner/bannerr/create">Yeni Reklam Oluştur</a></a>
+        <p>
         <a class="btn btn-lg btn-primary" href="http://portal.kouosl/admin/banner/bannerr/index">Reklamları Görüntüle</a></a>
         </p>
         

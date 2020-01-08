@@ -12,15 +12,13 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'bannerr_adi')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'reklamadi')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'bannerr_kodu')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'reklamkodu')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'bannerr_resim_url')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'reklamurl')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'bannerr_reklam_url')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'bannerr_created')->textInput() ?>
+    <?= $form->field($model, 'reklamolusturan')->textInput() ?>
 
     <div class="form-group">
         <a class="btn btn-lg btn-primary" href="http://portal.kouosl/admin/banner/bannerr/index">Vazgeç</a></a>

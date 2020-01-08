@@ -18,17 +18,15 @@ use yii\widgets\ActiveForm;
         ],
     ]); ?>
 
-    <?= $form->field($model, 'bannerr_id') ?>
+    <?= $form->field($model, 'reklamid') ?>
 
-    <?= $form->field($model, 'bannerr_adi') ?>
+    <?= $form->field($model, 'reklamadi') ?>
 
-    <?= $form->field($model, 'bannerr_kodu') ?>
+    <?= $form->field($model, 'reklamkodu') ?>
 
-    <?= $form->field($model, 'bannerr_resim_url') ?>
+    <?= $form->field($model, 'reklamurl') ?>
 
-    <?= $form->field($model, 'bannerr_reklam_url') ?>
-
-    <? $form->field($model, 'bannerr_created') ?>
+    <? $form->field($model, 'reklamolusturan') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
